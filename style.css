@@ -1,0 +1,56 @@
+/* Make font Arial for whole text*/
+body {
+	font-family: Arial;
+  }
+  
+/* Make headers centered*/
+h1,h3 {
+	text-align: center;
+  }
+
+/* Style flexboc by making it max width and height, and make the direction up and down into cols*/
+.flex-box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/* Make flexbox width 60%*/
+.flex-l {
+	width: 60%;
+	flex-wrap: flex;
+	flex-direction: column;
+}
+
+/* Make flexbox width 40%*/
+.flex-r {
+  text-align: left;
+	 max-width: 40%;
+  }
+
+/* Make axis*/
+.axis {
+	stroke: rgb(0,0,0);
+	stroke-width: 3;
+}
+
+/* Make grid lines*/
+.grid {
+	stroke: rgb(0,0,0);
+	stroke-width: 0.5;
+}
+
+/* Make points*/
+.point{
+	fill: rgb(0, 195, 255);
+}
+
+/* Highlight point on hover*/
+.point:hover {
+	fill: rgb(255, 0, 0);
+}
+
+
+
+
+
