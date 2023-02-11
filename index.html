@@ -52,19 +52,19 @@
 
                 <!-- Point at (1, 2) -->
                 <text x="50" y="425">(1,2)</text>  
-                <circle id="(1,2)" class="point" cx="50" cy="400" r="10" onclick="toggleBorder('(1,2)')"/></circle>
+                <circle id="(1,2)" class="point" cx="50" cy="400" r="10" onclick="borderFunction('(1,2)')"/></circle>
             
                 <!-- Point at (2, 4) -->
                 <text x="100" y="325">(2, 4)</text>
-                <circle id="(2, 4)" class="point" cx="100" cy="300" r="10" onclick="toggleBorder('(2, 4)')"/></circle>
+                <circle id="(2, 4)" class="point" cx="100" cy="300" r="10" onclick="borderFunction('(2, 4)')"/></circle>
 
                 <!-- Point at (6, 2) -->
                 <text x="300" y="425">(6, 2)</text>
-                <circle id="(6, 2)" class="point" cx="300" cy="400" r="10" onclick="toggleBorder('(6, 2)')"/></circle>
+                <circle id="(6, 2)" class="point" cx="300" cy="400" r="10" onclick="borderFunction('(6, 2)')"/></circle>
 
                 <!-- Point at (9, 9) -->
                 <text x="450" y="75">(9, 9)</text>
-                <circle id="(9, 9)" class="point" cx="450" cy="50" r="10" onclick="toggleBorder('(9, 9)')"/></circle>
+                <circle id="(9, 9)" class="point" cx="450" cy="50" r="10" onclick="borderFunction('(9, 9)')"/></circle>
                 
             </svg>
         </div>
@@ -72,10 +72,30 @@
         <!-- Right side of the flex box -->
         <div class="flex-r">
 
+
+            <div id="point-clicked" class="gen"></div>
+
         </div>
         
     </div>
 
+<!-- Java link -->   
+<script src='java.js'></script>
+
 </body>
+
+<!-- Resource List -->
+<h3 id="acknowledgements" >Acknowledgements</h3>
+
+    <div>
+        <ul>
+            <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a></li>
+            <li><a href="https://www.w3schools.com/js/js_input_examples.asp">Javascript & HTML Input Examples</a></li>
+            <li><a href="https://stackoverflow.com/questions/59936358/trying-to-add-svg-data-with-innerhtml">Data & .innerHTML</a></li>
+            <li><a href="https://www.sarasoueidan.com/blog/svg-coordinate-systems/">SVG Coordinates</a></li>
+            <li><a href="https://www.w3schools.com/graphics/svg_circle.asp">SVG Circle</a></li>
+        </ul>
+    </div>
+
 
 </html>
