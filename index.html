@@ -2,12 +2,79 @@
 <html> 
 
 <head>
+    <!-- Add stylesheet reference and a title -->
+    <link rel="stylesheet" href="style.css">
     <meta charset=utf-8/>
+    <title>hw-04</title>
 </head>
 
 
 <body>
+    <!-- Header for website -->
+    <h1>
+        hw-04: Event Handling
+    </h1>
 
+     <!-- Creating a flexbox -->
+     <div class="flex-box">
+
+        <!-- Left side of flex box -->
+        <div class="flex-l">
+
+            <!-- Coords @ degree of 50, ti help create scatter plot-->
+            <svg id="frame" height="500" width="500">  
+
+                <!-- Axes Lines -->
+                <line class="axis" x1="0" y1="500" x2="500" y2="500"></line>
+                <line class="axis" x1="0" y1="500" x2="0" y2="0"></line>
+                <line class="axis" x1="0" y1="0" x2="500" y2="0"></line>
+                <line class="axis" x1="500" y1="500" x2="500" y2="0"></line>
+
+                <!-- Grid Lines -->
+                <line class="grid" x1="0" y1="50" x2="500" y2="50"></line>
+                <line class="grid" x1="0" y1="100" x2="500" y2="100"></line>
+                <line class="grid" x1="0" y1="150" x2="500" y2="150"></line>
+                <line class="grid" x1="0" y1="200" x2="500" y2="200"></line>
+                <line class="grid" x1="0" y1="250" x2="500" y2="250"></line>
+                <line class="grid" x1="0" y1="300" x2="500" y2="300"></line>
+                <line class="grid" x1="0" y1="350" x2="500" y2="350"></line>
+                <line class="grid" x1="0" y1="400" x2="500" y2="400"></line>
+                <line class="grid" x1="0" y1="450" x2="500" y2="450"></line>
+                <line class="grid" x1="50" y1="500" x2="50" y2="0"></line>
+                <line class="grid" x1="100" y1="500" x2="100" y2="0"></line>
+                <line class="grid" x1="150" y1="500" x2="150" y2="0"></line>
+                <line class="grid" x1="200" y1="500" x2="200" y2="0"></line>
+                <line class="grid" x1="250" y1="500" x2="250" y2="0"></line>
+                <line class="grid" x1="300" y1="500" x2="300" y2="0"></line>
+                <line class="grid" x1="350" y1="500" x2="350" y2="0"></line>
+                <line class="grid" x1="400" y1="500" x2="400" y2="0"></line>
+                <line class="grid" x1="450" y1="500" x2="450" y2="0"></line>
+
+                <!-- Point at (1, 2) -->
+                <text x="50" y="425">(1,2)</text>  
+                <circle id="(1,2)" class="point" cx="50" cy="400" r="10" onclick="toggleBorder('(1,2)')"/></circle>
+            
+                <!-- Point at (2, 4) -->
+                <text x="100" y="325">(2, 4)</text>
+                <circle id="(2, 4)" class="point" cx="100" cy="300" r="10" onclick="toggleBorder('(2, 4)')"/></circle>
+
+                <!-- Point at (6, 2) -->
+                <text x="300" y="425">(6, 2)</text>
+                <circle id="(6, 2)" class="point" cx="300" cy="400" r="10" onclick="toggleBorder('(6, 2)')"/></circle>
+
+                <!-- Point at (9, 9) -->
+                <text x="450" y="75">(9, 9)</text>
+                <circle id="(9, 9)" class="point" cx="450" cy="50" r="10" onclick="toggleBorder('(9, 9)')"/></circle>
+                
+            </svg>
+        </div>
+        
+        <!-- Right side of the flex box -->
+        <div class="flex-r">
+
+        </div>
+        
+    </div>
 
 </body>
 
