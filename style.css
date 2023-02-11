@@ -1,5 +1,5 @@
 /* Make font Arial for whole text*/
-body {
+body, #acknowledgements {
 	font-family: Arial;
   }
   
@@ -50,7 +50,10 @@ h1,h3 {
 	fill: rgb(255, 0, 0);
 }
 
-
+.border{
+	stroke-width: 4px;
+	stroke: rgb(255, 0, 208);
+}
 
 
 
